@@ -3,6 +3,8 @@
 _This post was written for the [Q# Advent Calendar 2018](https://blogs.msdn.microsoft.com/visualstudio/2018/11/15/q-advent-calendar-2018/). 
 Check out the calendar for other posts!_
 
+_Update (March 2019). This same question [was raised](https://stackoverflow.com/q/55319901/) in regard to using Q# with F#. All the steps are exactly the same, so I decided to add an F# sample using the same Q# code without spinning up a separate project. If you need to use Q# from F#, read on and replace all occurrences of VB.NET with F# :-)_
+
 The Microsoft Quantum Development Kit documentation promises that quantum programs in Q# can be executed from classical .NET applications.
 However, the examples of classical drivers both in the [documentation](https://docs.microsoft.com/en-us/quantum/quickstart) and in the [samples repository](https://github.com/Microsoft/Quantum) all use C#.
 That made me wonder - what would it take to call Q# code from a driver written in Visual Basic .NET? 

@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetDriver", "VBNetDriver\VBNetDriver.vbproj", "{CD6FF4F8-5763-4901-9E26-4EDA90FD8B85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantumCode", "QuantumCode\QuantumCode.csproj", "{2BD1572A-0892-43D4-9D82-115AD86A8378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumCode", "QuantumCode\QuantumCode.csproj", "{2BD1572A-0892-43D4-9D82-115AD86A8378}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsharpDriver", "FsharpDriver\FsharpDriver.fsproj", "{6C0AC1D5-9C57-43DD-BC0B-3306A1B4CDF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2BD1572A-0892-43D4-9D82-115AD86A8378}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BD1572A-0892-43D4-9D82-115AD86A8378}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BD1572A-0892-43D4-9D82-115AD86A8378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0AC1D5-9C57-43DD-BC0B-3306A1B4CDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0AC1D5-9C57-43DD-BC0B-3306A1B4CDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0AC1D5-9C57-43DD-BC0B-3306A1B4CDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0AC1D5-9C57-43DD-BC0B-3306A1B4CDF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
