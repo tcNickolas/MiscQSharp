@@ -1,5 +1,6 @@
 ﻿namespace Quantum.DecoratingTheTree
 {
+    open Microsoft.Quantum.Math;
     open Microsoft.Quantum.Arrays;
     open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Measurement;
@@ -36,11 +37,18 @@
     }
 
     operation GroversSearch_Main (nLayers : Int) : Bool[] {
-        let nSlots = nLayers ^ 2;   // number of decoration slots in the tree
-        let oracle = Oracle_IsValidTreeDecoration;
-        let iter = 6;               // TODO: figure out number of iterations based on the number of trees
-        mutable answer = new Bool[nSlots];
-        using ((register, output) = (Qubit[nSlots], Qubit())) {
+        let nBranches = nLayers ^ 2;   // number of branches in the tree
+        let oracle = Oracle_IsValidTreeDecoration(nLayers, _, _);
+
+        let searchSpaceSize = 2 ^ (nLayers ^ 2);
+        mutable solutionsNumber = 1;
+        for (layerInd in 2 .. nLayers) {
+            set solutionsNumber *= 2 * layerInd - 2;
+        }
+        let iter = Round(PI() / 4.0 * Sqrt(IntAsDouble(searchSpaceSize) / IntAsDouble(solutionsNumber)));
+
+        mutable answer = new Bool[nBranches];
+        using ((register, output) = (Qubit[nBranches], Qubit())) {
             mutable correct = false;
             repeat {
                 GroversSearch_Loop(register, oracle, iter);
