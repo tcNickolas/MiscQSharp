@@ -170,7 +170,7 @@ But when we try to find a solution for 4 layers, the code takes a long time to r
 Turns out it is not enough to write the quantum program to run on inputs of  arbitrary sizes; 
 one also has to be conscious of the resources it will need to run, and prepared to optimize the code to fit into the resources available.
 
-In the next part of this blog post we'll take a look at estimating the  resources necessary to execute the quantum program and at some tricks that can be used to optimize it. 
+In the [next part of this blog](../DecoratingTheTree2019-Optimize#decorating-the-christmas-tree-using-grovers-search) post we'll take a look at estimating the  resources necessary to execute the quantum program and at some tricks that can be used to optimize it. 
 
 *After all, the elves will never let me live it down if the quantum solution will not be ready in time for the second year in a row...*
 
