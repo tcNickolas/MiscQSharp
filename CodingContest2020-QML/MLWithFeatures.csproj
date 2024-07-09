@@ -9,7 +9,7 @@
     <PackageReference Include="Microsoft.Quantum.Development.Kit" Version="0.11.2004.2825" />
     <PackageReference Include="Microsoft.Quantum.Standard" Version="0.11.2004.2825" />
     <PackageReference Include="Microsoft.Quantum.MachineLearning" Version="0.11.2004.2825" />
-    <PackageReference Include="System.Text.Json" Version="4.6.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
     <PackageReference Include="xunit" Version="2.3.1" />
   </ItemGroup>
 </Project>
